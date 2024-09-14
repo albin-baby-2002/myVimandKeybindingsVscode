@@ -115,16 +115,17 @@ visual mode and a { -  will copy the text in {}
 
 simlary in normal mode we can ya{ or yi{
 
-function hello (type:{name:string}){
-    return type.name.toUpperCase()
-}
+ctrl + d to move down the page half or more at a time
+ctrl + u to move up the page half or more at a time
 
-function just (type:just-in-time){
+yap - copy the continous lines means like paragraph
+similary dap - deletes it
 
-}
+ctrl+a to increment a number
+ctrl+x to decrement a number
 
-continous-word
-continous-word
-continous-word
+g ctrl+a will incrment all value by one in order - like 2,3,4 will 5,6,7
 
-hello
+3
+5
+7
