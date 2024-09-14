@@ -36,6 +36,13 @@ d - delete
 y - copying
 p - pasting
 
+{
+    dj- delete current line and down line
+    d3j - delete current line and next 3 lines
+    d3k - delete current line 3 line above
+
+} - this can be done for y3j y3k etc
+
 dd - delete the whole line
 cc - delete the line and be in the same line in insert mode
 c - delete the selected and go in insert mode
@@ -90,6 +97,34 @@ F* - take backward to the symbol
 dt( - delete till (
 df( - delete including ( )
 
+yt( - copy till the (
+yf( - copy including the (
+
+vf( - hightlight including (
+vt( - hightlight till(
+
 some things we need to talk (hello what you want hhhhh llll ll)
 
 one thing or other
+
+ctrl+d - middle of the page
+shift v - visual mode a line and y to yank and again go to another line shift v paste it
+
+visual mode and i { -  will copy the text in {}
+visual mode and a { -  will copy the text in {}
+
+simlary in normal mode we can ya{ or yi{
+
+function hello (type:{name:string}){
+    return type.name.toUpperCase()
+}
+
+function just (type:just-in-time){
+
+}
+
+continous-word
+continous-word
+continous-word
+
+hello
