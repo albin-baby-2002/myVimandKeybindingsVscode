@@ -1,7 +1,9 @@
 {
-  // VS Code automatically highlights selected words.
-  // "vim.hlsearch": false,
+  // VS Code automatically highlights selected w
+
+  "vim.leader": " ",
   "vim.timeout": 200,
+
   "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
     {
@@ -27,12 +29,17 @@
       "before": ["<C-l>"],
       "after": ["<Right>"],
       "mode": "insert"
+    },
+    {
+      "before": ["<C-x>"],
+      "after": ["<BS>"],
+      "mode": "insert"
     }
   ],
   "vim.useCtrlKeys": true,
   "vim.handleKeys": {
     "<C-f>": true,
-    "<C-a>": false
+    "<C-a>": true
   },
   "vim.normalModeKeyBindings": [
     {
@@ -55,11 +62,20 @@
       "before": ["d", "n"],
       "after": ["d", "g", "_"]
     }
+    // {
+    //   "before": ["<leader>p"],
+    //   "after": ["\"", "_", "d"]
+    // }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<C-n>"],
       "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>p"],
+      "after": ["\"", "_", "d"],
+      "mode": "normal"
     }
   ],
   // vim mode viwy viwcmd+d p issue hack
@@ -73,6 +89,10 @@
     {
       "before": ["k", "j"],
       "after": ["<Esc>", "l"]
+    },
+    {
+      "before": ["<leader>p"],
+      "after": ["\"", "_", "d"]
     }
   ],
 
@@ -319,4 +339,3 @@
   "git.openRepositoryInParentFolders": "never",
   "vim.smartRelativeLine": true
 }
-
