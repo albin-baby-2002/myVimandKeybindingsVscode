@@ -98,11 +98,6 @@
 
   // TODO: Traverse search results with Vim
   {
-    "key": "ctrl+j",
-    "command": "search.action.focusNextSearchResult",
-    "when": "hasSearchResult && workbench.view.search.visible"
-  },
-  {
     "key": "ctrl+p",
     "command": "-extension.vim_ctrl+p",
     "when": "editorTextFocus && vim.active && vim.use<c-p> && !inDebugREPL || vim.active && vim.use<c-p> && !inDebugREPL && vim.mode == 'commandLineInProgress' || vim.active && vim.use<c-p> && !inDebugREPL && vim.mode == 'searchInProgressMode'"
@@ -120,7 +115,7 @@
 
   // TODO: Select file from explorer
   {
-    "key": "ctrl+space",
+    "key": "ctrl+q",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -133,5 +128,10 @@
     "key": "ctrl+p",
     "command": "-extension.vim_ctrl+p",
     "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-extension.vim_ctrl+b",
+    "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
   }
 ]
