@@ -173,3 +173,12 @@ CURSOR SHORTCUTS
 - $ to move to the end of the line
 
 ---------------------------------------------------------------------------
+
+- ZM to fold blocks
+- ZR to unfold blocks
+-
+- ZC to fold individual blocks
+- ZO to unfold individual blocks
+
+- I to insert mode from vertical
+- J to paste line under to above
